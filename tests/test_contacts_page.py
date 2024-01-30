@@ -1,4 +1,6 @@
 import allure
+import pytest
+
 from config.base_test import BaseTest
 
 
@@ -6,6 +8,7 @@ from config.base_test import BaseTest
 class TestContactsPage(BaseTest):
 
     @allure.title("Add new contact")
+    @pytest.mark.smoke
     def test_add_new_contact(self):
         self.base_page.open()
         self.base_page.go_to_contacts()
