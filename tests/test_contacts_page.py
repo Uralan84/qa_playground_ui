@@ -5,6 +5,7 @@ from config.base_test import BaseTest
 
 
 @allure.feature("Contacts page")
+@allure.title("какойто текст lflflf")
 class TestContactsPage(BaseTest):
 
     @allure.title("Add new contact")
